@@ -15,6 +15,33 @@
 ```
 yay -S hyprland aylurs-gtk-shell alacritty
 ```
+- keep in mind a few notes [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - copy folders of this repo to your `.config` folder
-
-- ~~hyprland on top~~ believe it or not, this actually works.
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- lmfao
