@@ -6,4 +6,15 @@
 - My aesthetic dotfiles.
 - Simple is better.
 
-![image](https://github.com/end-4/awesomewm-dotfiles/assets/97237370/758bf4a6-d84f-4b42-b98f-14ede4e84fdf)
+## Preview
+
+![image](https://github.com/end-4/awesomewm-dotfiles/assets/97237370/f2e27058-1656-4b37-99a9-4d6139a26408)
+
+## Instructions
+- install dependencies
+```
+yay -S hyprland aylurs-gtk-shell alacritty
+```
+- copy folders of this repo to your `.config` folder
+
+- ~~hyprland on top~~ believe it or not, this actually works.
