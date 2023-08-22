@@ -79,7 +79,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: "0xDFDFDF"
+    background: "0xdad9cd"
     foreground: "0x393939"
 
   # Cursor colors
@@ -95,11 +95,11 @@ colors:
     # affected cell, or hexadecimal colors like #ff00ff.
     matches:
       foreground: "0x393939"
-      background: "0xDFDFDF"
+      background: "0xdad9cd"
 
     focused_match:
       foreground: "0x393939"
-      background: "0xDFDFDF"
+      background: "0xdad9cd"
 
 
   # Selection colors
@@ -110,7 +110,7 @@ colors:
   # affected cell, or hexadecimal colors like #ff00ff.
   selection:
     text: CellForeground
-    background: "0xDFDFDF"
+    background: "0xdad9cd"
 
   # Vi mode cursor colors
   #
@@ -124,7 +124,7 @@ colors:
 
   # Normal colors
   normal:
-    black: "0xDFDFDF"
+    black: "0xdad9cd"
     red: "0x393939"
     green: "0x393939"
     yellow: "0x393939"
@@ -135,7 +135,7 @@ colors:
 
   # Bright colors
   bright:
-    black: "0xDFDFDF"
+    black: "0xdad9cd"
     red: "0x393939"
     green: "0x393939"
     yellow: "0x393939"
