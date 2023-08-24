@@ -3,7 +3,7 @@
     <h3></h3>
 </div>
 
-- My aesthetic dotfiles.
+- My aesthetic awesomewm dotfiles.
 - Simple is better.
 
 ## Preview
@@ -17,31 +17,4 @@ yay -S hyprland aylurs-gtk-shell alacritty
 ```
 - keep in mind a few notes [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - copy folders of this repo to your `.config` folder
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- lmfao
+- in a tty, type `Hyprland`
