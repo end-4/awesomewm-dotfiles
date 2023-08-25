@@ -1,12 +1,12 @@
-const awesomebutton = {
+const { App, Widget } = ags;
+
+const awesomebutton = Widget.Button({
     halign: 'center',
     valign: 'center',
-    type: 'button',
     className: 'awesome-butt',
-}
+});
 
-const hyprClients = {
-    type: 'box',
+const hyprClients = Widget.Box({
     orientation: 'h',
     homogeneous: true,
     hexpand: true,
@@ -15,70 +15,62 @@ const hyprClients = {
             box.get_children().forEach(ch => ch.destroy());
             ags.Service.Hyprland.clients.forEach(client => {
                 if (client.class == '' || client.workspace.id != ags.Service.Hyprland.active.workspace.id) return;
-                box.add(ags.Widget({
-                    // One app goes here
-                    type: 'box',
+                box.add(Widget.Box({
                     children: [
-                        {
-                            type: 'icon',
+                        Widget.Icon({
                             valign: 'center',
                             className: 'app-icon',
                             icon: client.class,
                             size: 30,
-                        },
-                        {
-                            type: 'scrollable',
+                        }),
+                        Widget.Scrollable({
                             hscroll: 'always',
                             vscroll: 'never',
                             hexpand: true,
-                            child: {
-                                type: 'label',
+                            child: Widget.Label({
                                 xalign: 0,
                                 label: client.title,
-                            }
-                        }
+                            })
+                        })
                     ]
                 }));
             })
             box.show_all();
         }
     ]]
-};
+});
 
-const clock = {
-    type: 'label',
+const clock = Widget.Label({
     className: 'clock',
     connections: [[1000, label => label.label = ags.Utils.exec('date "+%H:%M"').trim()]],
-};
+});
 
-const bar = {
+const bar = Widget.Window({
     name: 'bar',
     anchor: ['bottom', 'left', 'right'],
     exclusive: true,
-    child: {
-        type: 'box',
+    child: Widget.Box({
         className: 'bar',
         children: [
             awesomebutton,
             hyprClients,
             clock,
         ]
-    },
-}
+    }),
+});
 
-const solidBg = {
+const solidBg = Widget.Window({
     name: 'solidBg',
     anchor: ['bottom', 'left', 'right', 'top'],
     layer: 'bottom',
     exclusive: false,
-    child: {
-        type: 'box',
+    child: Widget.Box({
         className: 'bg',
-    },
-}
+    }),
+});
 
 // exporting the config
-var config = {
-    style: ags.Utils.CONFIG_DIR + '/style.css',
+export default {
+    style: `${App.configDir}/style.css`,
     windows: [bar, solidBg],
 };
