@@ -14,7 +14,7 @@
 ## Instructions
 - install dependencies
 ```
-yay -S hyprland aylurs-gtk-shell alacritty
+yay -S hyprland aylurs-gtk-shell alacritty shell-color-scripts bunnyfetch
 ```
 - keep in mind a few notes [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - copy folders of this repo to your `.config` folder
