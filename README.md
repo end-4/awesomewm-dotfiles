@@ -8,7 +8,8 @@
 
 ## Preview
 
-![image](https://github.com/end-4/awesomewm-dotfiles/assets/97237370/f2e27058-1656-4b37-99a9-4d6139a26408)
+![image](https://github.com/end-4/awesomewm-dotfiles/assets/97237370/2a29a6e9-a7dc-46ae-b345-a0a1dd760f59)
+
 
 ## Instructions
 - install dependencies
