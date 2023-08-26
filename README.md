@@ -5,6 +5,7 @@
 
 - My aesthetic awesomewm dotfiles.
 - Simple is better.
+- Read the instructions below!
 
 ## Preview
 
