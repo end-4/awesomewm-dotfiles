@@ -15,25 +15,30 @@ const hyprClients = Widget.Box({
             box.get_children().forEach(ch => ch.destroy());
             ags.Service.Hyprland.clients.forEach(client => {
                 if (client.class == '' || client.workspace.id != ags.Service.Hyprland.active.workspace.id) return;
-                box.add(Widget.Box({
-                    children: [
-                        Widget.Icon({
-                            valign: 'center',
-                            className: 'app-icon',
-                            icon: client.class,
-                            size: 30,
-                        }),
-                        Widget.Scrollable({
-                            hscroll: 'always',
-                            vscroll: 'never',
-                            hexpand: true,
-                            child: Widget.Label({
-                                xalign: 0,
-                                label: client.title,
-                            })
+                box.add(
+                    Widget.Button({
+                        onPrimaryClick: () => ags.Utils.exec(`hyprctl dispatch focuswindow address:${client.address}`),
+                        child: Widget.Box({
+                            children: [
+                                Widget.Icon({
+                                    valign: 'center',
+                                    className: 'app-icon',
+                                    icon: client.class,
+                                    size: 30,
+                                }),
+                                Widget.Scrollable({
+                                    hscroll: 'always',
+                                    vscroll: 'never',
+                                    hexpand: true,
+                                    child: Widget.Label({
+                                        xalign: 0,
+                                        label: client.title,
+                                    })
+                                })
+                            ]
                         })
-                    ]
-                }));
+                    })
+                );
             })
             box.show_all();
         }

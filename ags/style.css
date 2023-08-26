@@ -1,13 +1,14 @@
 * { all: unset; }
 
 .bar {
+    font-family: Roboto;
     min-height: 40px;
-    background-color: #dad9cd;
-    color: #373737; /*lmfao*/
+    background-color: #c7e2e9;
+    color: #2c3436;
 }
 
 .bg {
-    background-color: #fcf1ba;
+    background-color: #96b1c1;
 }
 
 .awesome-butt {
